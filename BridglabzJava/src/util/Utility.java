@@ -128,48 +128,50 @@ public class Utility {
 		}
 		
 	}
-	/****************************************
+	/*******************************************************************************************************
+	 * 
 	 * 
 	 */
 //7::	Gambler
 	public static void gambler()
-	{
+	{   System.out.println("Enter the stake:");
 		int stake=s.nextInt();//HOW MANY CASH U WANT TO INVEST
+		System.out.println("Enter the goals:");
 		int goals=s.nextInt();//WHAT IS UR TARGET..
+		System.out.println("How many time u want to try:");
 		int trials=s.nextInt();
 		int bet=0;
 		int win=0;
 		//no of trials start
 				for(int i=1;i<trials;i++)
-				{
-					int cash=stake;
-				       while(cash>0 && cash<=goals)
-				{
+				{int cash=stake;
+				       
+				   while(cash>0 && cash<=goals)
+				  {
 					bet++;
-					if(Math.random()<0.5)
-					{
+					 if(Math.random()<0.5)
+					 {
 						cash++;
-					}
-					else
-					{
+					 }
+					 else
+					 {
 						cash--;
-					}
-
-				}
-				       if(cash==goals)
-				{
-					win++;
-				}
-				       }
-				System.out.println(win+"win of"+trials);
-				System.out.println("% of game won="+ 100.0* win/trials);
+					 }
+				  }  
+				     if(cash==goals)
+				     {
+					    win++;
+				     }
+						
+				 }System.out.println(win+"win of"+trials);
+					System.out.println("% of game won="+ 100.0* win/trials);
 				
 			}
 			
 	
-
-	//***********************************************
-	//***********************************************
+/*******************************************************************************************************
+ * 
+ */
 	//9:: PROGRAM LOGIC FOR 2D array
 	static Scanner s=new Scanner(System.in);
 	public static void Two_2D_array(int row,int col,int i,int j,int arr[][])
@@ -212,7 +214,7 @@ public class Utility {
 					for(int k=j+1;j<l;k++)
 					{
 						if(arr[i]+arr[j]+arr[k]==0)
-						{
+						{ System.out.println("Triplets are given=");
 							System.out.println("triplets="+arr[i]+" "+arr[j]+" "+arr[k]);
 							//return true;
 						}return true;
@@ -235,12 +237,10 @@ public static void distance(int x, int y) {
 /******************************************************************************
  * 
  */
-//12:: permutation of a String 
-
-
-	//************************************************************
-	//***********************************************************//
-	//13:: StopWatch
+    /***************************************************************************************
+	 * 
+	 */
+//13:: StopWatch
 	public static void start()
 	{
 		long StartTime = System.currentTimeMillis();
@@ -262,8 +262,11 @@ public static void distance(int x, int y) {
 			
 		}
 	
-	//*******************************************************************
-	//*******************************************************************
+	/********************************************************************************************************
+	 * 
+	 * @param temp
+	 * @param speed
+	 */
 // 16::program WindChill.java //
 public static void calculate(double temp, double speed) {
 	
