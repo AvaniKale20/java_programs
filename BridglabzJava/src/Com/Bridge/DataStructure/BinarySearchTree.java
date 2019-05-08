@@ -26,17 +26,7 @@ public class BinarySearchTree {
 	}
 	
    public	static long factnumber(int number)
-	{
-//		long x=2*number;
-//		//Finding the value of x
-//		x=factorial(x);                
-
-//		long y= number+1;
-//		//Finding the value of y					
-//		y=factorial(y);					
-//
-//		//Finding the value 
-//		long z= factorial(number);		
+   { 
 
 		long value=factorial(2*number)/(factorial(number+1)*factorial(number));
 		return value;

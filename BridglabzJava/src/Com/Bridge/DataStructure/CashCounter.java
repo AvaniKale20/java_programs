@@ -18,13 +18,13 @@ class Node
 		data = d;
 		next = n;
 	}
-	
+	//set function use for set data to current node
 	public void setNode(int d)
 	{
 		data = d;
 	}
-	
-	public void setLink(Node n)
+	//set the node to next nod4e
+	public void setNext(Node n)
 	{
 		next = n;
 	}
@@ -34,17 +34,17 @@ class Node
 		return data;
 	}
 	
-	public Node getLink()
+	public Node getNext()
 	{
 		return next;
 	}
 }
-
+//class of cash counter
 public class CashCounter {
 	
 	public Node front, rear;
 	public int size;
-	
+	//constructor called
 	public CashCounter() {
 		front = null;
 		rear = null;
@@ -72,8 +72,8 @@ public class CashCounter {
 		}
 		else
 		{
-			rear.setLink(newnode);
-			rear = rear.getLink();
+			rear.setNext(newnode);
+			rear = rear.getNext();
 		}
 		size++;
 	}
@@ -85,7 +85,7 @@ public class CashCounter {
         	throw new NoSuchElementException("Underflow Exception");
 		}
         Node ptr = front;
-        front = ptr.getLink();        
+        front = ptr.getNext();        
         if (front == null)
 		{
             rear =null;
@@ -117,12 +117,12 @@ public class CashCounter {
 		
 		Node ptr = front;
 		
-		while(ptr != rear.getLink())
+		while(ptr != rear.getNext())
 		{
 			ptr1 = ptr1+ptr.getNode();
 			System.out.println(ptr1);
 			
-			ptr = ptr.getLink();
+			ptr = ptr.getNext();
 		}
 		System.out.println();
 	}

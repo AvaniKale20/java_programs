@@ -9,7 +9,7 @@ public class CashcounterMain {
 		
 			CashCounter cash = new CashCounter();
 			
-			int ch=0;
+			int choice=0;
 			do {
 				System.out.println("1.deposit");
 				System.out.println("2.withdrawl");
@@ -18,10 +18,10 @@ public class CashcounterMain {
 				System.out.println();
 				System.out.println("Enter your choice");
 				Scanner sc = new Scanner(System.in);
-				 ch = sc.nextInt();
+				 choice = sc.nextInt();
 	 
 				//int data=sc.nextInt();
-				switch(ch)
+				switch(choice)
 				{
 				
 				case 1: System.out.println("Enter amount u want to deposit:");
@@ -47,7 +47,7 @@ public class CashcounterMain {
 				           
 				}
 				
-			}while(ch<5);
+			}while(choice<5);
 		}
 
 	

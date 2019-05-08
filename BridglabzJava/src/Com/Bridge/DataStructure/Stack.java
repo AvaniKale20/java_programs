@@ -80,6 +80,7 @@ public class Node<T>
 		{
 			System.out.print(new_node.data+" ");
 			new_node = new_node.next;
+			System.out.println();
 			
 		}
 		

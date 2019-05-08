@@ -148,6 +148,7 @@ public class LinkedList<T>
 			System.out.println();// print data of node
 			n = n.next;
 		}
+	
 		System.out.print(n.data); // to print data of last node
 		return;
 	}
@@ -259,5 +260,6 @@ public class LinkedList<T>
 		}
 	}
 
+	
 
 }
