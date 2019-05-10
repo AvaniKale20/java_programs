@@ -1,6 +1,4 @@
-package Hashing;
-
-
+package hashing;
 
 import java.io.BufferedReader;
 
@@ -12,8 +10,11 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class HashingNumber {
+
+
 	public static LinkedList slot[] = new LinkedList[11];
 
+	
 	public static void main(String[] args) throws FileNotFoundException {
 		String path = "/home/user/Desktop/File3.txt";
 

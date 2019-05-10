@@ -24,7 +24,7 @@ public class Calender {
 		
 		static void display(int m)
 		{
-			System.out.println("	sun  	mon  	tue  	wed  	thu   	sat  	sun");
+			System.out.println("	sun  	mon  	tue  	wed  	thu   	fry  	sat");
 			
 			for(int i =0;i<arr.length;i++)
 			{

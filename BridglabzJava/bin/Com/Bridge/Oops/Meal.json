@@ -1,0 +1,24 @@
+{
+"rice":
+[
+{"name" : "basmati", "price": 120 , "weight" : 120},
+{"name" : "kolam", "price" : 130 , "weight" : 150},
+{"name" : "hhh" , "price" : 150 , "weight" : 80}
+]
+,
+
+"wheat":
+[
+{"name" : "www", "price": 120 , "weight" : 120},
+{"name" : "hhh", "price": 120 , "weight" : 120},
+{"name" : "eee", "price": 120 , "weight" : 120}
+]
+,
+
+"pulses":
+[
+{"name" : "ppp", "price": 120 , "weight" : 120},
+{"name" : "uuu", "price": 120 , "weight" : 120},
+{"name" : "lll", "price": 120 , "weight" : 120}
+]
+}

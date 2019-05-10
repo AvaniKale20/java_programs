@@ -65,7 +65,7 @@ public class Utility {
 			
 			for(int i = 2; i<range ;i++)
 			{
-				if(isPrime(i))
+				if(Prime(i))
 				{
 					array[index] = String.valueOf(i);
 					index++;
@@ -119,7 +119,7 @@ public class Utility {
 		}
 
 
-		private static boolean isPrime(int no) {
+		private static boolean Prime(int no) {
 		
 			for(int i = 2; i<no/2 ;i++)
 			{

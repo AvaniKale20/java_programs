@@ -9,6 +9,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Scanner;
+//import java.util.LinkedList;
 
 public class UnOrderedList 
 {
@@ -46,12 +47,12 @@ public class UnOrderedList
 	     
 	     //taking String from user to search.
 	     System.out.println("Enter String which you want to search:");
-	     String searchstring=sc.next();
-	     if(l1.search(searchstring))
+	     String search=sc.next();
+	     if(l1.search(search)) 
 	     {
 	    	 //if string is found.
 	    	 System.out.println("String is found..");
-	    	 l1.delete(searchstring);
+	    	 l1.delete(search);
 	    	 System.out.println("String is deleted.....");
 	    	 l1.show();
 	     }
@@ -59,7 +60,7 @@ public class UnOrderedList
 	     {
 	    	 //if string is not found.
 	    	 System.out.println("String is not foud..");
-	    	 l1.add(searchstring);
+	    	 l1.add(search);
 	    	 System.out.println("String is added in file.....");
 	    	 l1.show();
 	     }        

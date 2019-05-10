@@ -1,5 +1,4 @@
-package Hashing;
-
+package hashing;
 
 public class LinkedList {
 
