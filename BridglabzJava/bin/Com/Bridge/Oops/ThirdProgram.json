@@ -1,9 +1,9 @@
 {
 "Stock":
 [
-{"Stock_Name" : "abc", "Number_of_Share": 20 , "Share_Price" : 120},
-{"Stock_Name" : "bcd", "Number_of_Share" : 30 , "Share_Price" : 150},
-{"Stock_Name" : "xyz" , "Number_of_Share" : 10 , "Share_Price" : 80}
+{"Stock_Name" : "Airtel", "Number_of_Share": 20 , "Share_Price" : 120},
+{"Stock_Name" : "Vodafone", "Number_of_Share" : 30 , "Share_Price" : 150},
+{"Stock_Name" : "Jio" , "Number_of_Share" : 10 , "Share_Price" : 80}
 ]
 
 }
