@@ -18,6 +18,7 @@ public class stockReportUsingIM {
 		int numberOfshare=0;
 		ObjectMapper mapper=new ObjectMapper();
 		File file=new File("/home/user/Documents/program/avani/BridglabzJava/src/Stock_4th/Stock_.json");
+		File file1=new File("home/user/Documents/program/avani/BridglabzJava/src/Stock_4th/Write_4_Stock.json");
 		try 
 		{
 			JsonNode node=mapper.readTree(file);
@@ -63,11 +64,20 @@ public class stockReportUsingIM {
 			}
 			System.out.println("Total Price :"+price);
 			System.out.println("Total number of share :"+numberOfshare);
+			
+			for(stock stock2:stock1)
+			{
+				String jsonres="";
+				jsonres=mapper.writeValueAsString(stock2);
+			mapper.writeValue(file1, stock2);
+			System.out.println(stock2);
+			}
 		} catch (IOException e)
 		{
 			
 			e.printStackTrace();
 		}
+		
 		
 	}
 

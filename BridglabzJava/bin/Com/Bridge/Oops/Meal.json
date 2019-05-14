@@ -9,16 +9,16 @@
 
 "wheat":
 [
-{"name" : "www", "price": 120 , "weight" : 120},
-{"name" : "hhh", "price": 120 , "weight" : 120},
-{"name" : "eee", "price": 120 , "weight" : 120}
+{"name" : "www", "price": 110 , "weight" : 110},
+{"name" : "hhh", "price": 120 , "weight" : 70},
+{"name" : "eee", "price": 130 , "weight" : 80}
 ]
 ,
 
 "pulses":
 [
-{"name" : "ppp", "price": 120 , "weight" : 120},
-{"name" : "uuu", "price": 120 , "weight" : 120},
-{"name" : "lll", "price": 120 , "weight" : 120}
+{"name" : "ppp", "price": 110 , "weight" : 38},
+{"name" : "uuu", "price": 120 , "weight" : 45},
+{"name" : "lll", "price": 130 , "weight" : 55}
 ]
 }
