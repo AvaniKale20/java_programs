@@ -3,7 +3,6 @@ package Doctor_;
 
 
 /**
- * 
  * @aim class to manipulate doctor and patient data
  */
 import java.io.File;
@@ -13,9 +12,6 @@ import java.util.List;
 import java.util.stream.Collectors;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.type.TypeReference;
-
-//import Address_book.Utility;
-//import com.utility.Utility;
 
 public class DoctorPatientImplementation implements DoctorAndPatientData {
 	static ObjectMapper mapper = new ObjectMapper(); //create mapper 
@@ -51,9 +47,9 @@ public class DoctorPatientImplementation implements DoctorAndPatientData {
 	boolean changeflag = false;
 	Utility input = new Utility();
 
-	public DoctorPatientImplementation() {
-
-	}
+//	public DoctorPatientImplementation() {
+//
+//	}
 
 	@Override
 	public void operation() {
@@ -67,7 +63,7 @@ public class DoctorPatientImplementation implements DoctorAndPatientData {
 			System.out.println("6. Exit");
 			Answer = Utility.getInt();
 			switch (Answer) {
-			case 1:
+			case 1: 
 				//to add doctor
 				addDoctor();
 				//save data
@@ -102,6 +98,10 @@ public class DoctorPatientImplementation implements DoctorAndPatientData {
 
 	//add new doctor to list
 	@Override
+	/********************************
+	 * @return void
+	 * to add doctor
+	 */
 	public void addDoctor() {
 		System.out.println("Enter Name");
 		name = Utility.getString();
@@ -121,6 +121,10 @@ public class DoctorPatientImplementation implements DoctorAndPatientData {
 	}
 
 	//delete doctor from list
+	/******
+	 * @return void
+	 * for delete operation
+	 */
 		@Override
 	public void deleteDoctor() {
 		System.out.println("Enter Doctor id");
@@ -136,7 +140,10 @@ public class DoctorPatientImplementation implements DoctorAndPatientData {
 		}
 		
 	}
-
+/**************************
+ * @return void
+ * to add patient
+ */
 //add new patient
 	public void addPatient() {
 		changeflag = true;
@@ -161,6 +168,11 @@ public class DoctorPatientImplementation implements DoctorAndPatientData {
 
 	//delete patient from list
 	@Override
+	/***********************
+	 * @return void
+	 * for  delete the patients
+	 * @
+	 */
 	public void deletePatient() {
 		changeflag = true;
 		saveflag = false;
@@ -176,9 +188,11 @@ public class DoctorPatientImplementation implements DoctorAndPatientData {
 			System.out.println("No Patient Found With This Id");
 		}
 	}
-
-	//save data
+//save data
 	@Override
+	/***********
+	 * @return void
+	 */
 	public void save() {
 		try {
 			
@@ -190,7 +204,10 @@ public class DoctorPatientImplementation implements DoctorAndPatientData {
 		}
 	}
 //fix appointment
+	/***********
 	@Override
+	@return void
+	*/
 	public void fixAppointment() {
 			// TODO Auto-generated method stub
 		System.out.println("Enter DoctorId");

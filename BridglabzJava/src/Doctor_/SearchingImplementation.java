@@ -1,9 +1,7 @@
 package Doctor_;
 
 
-/**
- * 
- * @aim to search doctor from list
+/**@aim to search doctor from list
  */
 import java.io.File;
 import java.util.ArrayList;
@@ -11,9 +9,6 @@ import java.util.List;
 import java.util.stream.Collectors;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.type.TypeReference;
-//import com.utility.Utility;
-
-
 
 public class SearchingImplementation implements Searching {
 //to store data in arraylist

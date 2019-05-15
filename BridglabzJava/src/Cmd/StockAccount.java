@@ -87,7 +87,7 @@ static File customerShare=new File ("/home/user/Documents/program/avani/Bridglab
 	}
 	
 	/******************************************************
-	 * perpose: To search by name  of CustomerName 
+	 * purpose: To search by name  of CustomerName 
 	 * return:int
 	 ******************************************************/
 

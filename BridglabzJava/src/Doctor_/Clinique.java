@@ -1,13 +1,9 @@
 package Doctor_;
 
-
 import java.text.ParseException;
 import java.util.Date;
 
-
-//import com.utility.Utility;
 /**
- * 
  * @aim runner class for clinique management
  */
 public class Clinique {

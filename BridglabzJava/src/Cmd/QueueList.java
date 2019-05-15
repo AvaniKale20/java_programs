@@ -1,6 +1,8 @@
 package Cmd;
 
-
+/******************************************************************************************
+ * @purpose : To hold all the method of queuelist
+ */
 
 public class QueueList<T>{
 	int size;
@@ -15,7 +17,10 @@ public class QueueList<T>{
 	Node front;		//front pointer
 	@SuppressWarnings("rawtypes")
 	Node rear;		//rear pointer
-	
+	/*********************************************************
+	 * @return void
+	 * @param data
+	 */
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public void enqueue(T data)
 	{
@@ -45,7 +50,9 @@ public class QueueList<T>{
 		}
 		
 	}
-	
+	/****************************
+	 * @return void
+	 */
 	@SuppressWarnings("rawtypes")
 	public void print()						//to print the elements
 	{
@@ -58,7 +65,9 @@ public class QueueList<T>{
 		}
 
 	}
-	
+	/********************************
+	 * @return void
+	 */
 	
 	
 	@SuppressWarnings({ "rawtypes" })
@@ -77,6 +86,9 @@ public class QueueList<T>{
 		}
 		
 	}
+	/*******************************
+	 * @return boolean
+	 */
 	
 	public boolean isEmpty()				//returns true if it is empty
 	{
@@ -86,7 +98,9 @@ public class QueueList<T>{
 		}else
 			return false;
 	}
-	
+	/***********************
+	 * @return int
+	 */
 	public int size()						//to return the size value
 	{
 		return size;

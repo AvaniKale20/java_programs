@@ -4,6 +4,7 @@ package Cmd;
 
 public class StackList<T> 
 {
+@SuppressWarnings("rawtypes")
 static Node head;
 	
 	public static class Node<T>
@@ -34,6 +35,7 @@ static Node head;
 	
 	public  T last(T new_data)
 	{
+		@SuppressWarnings({ "unchecked", "rawtypes" })
 		Node new_node=new Node(new_data);
 		
 		if(head==null)
@@ -60,8 +62,10 @@ static Node head;
 		return new_data;
 	}
 	
+	@SuppressWarnings("unchecked")
 	public T push(T new_data)
 	{
+		@SuppressWarnings("rawtypes")
 		Node new_node=new Node(new_data);
 		
 		new_node.next=head;

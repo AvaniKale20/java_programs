@@ -24,6 +24,11 @@ public class BinarySearchTree {
 			System.out.println("Possible number of "+number[i]+" node is "+x);
 		}
 	}
+	/******************************
+	 *  we use factnumber function
+	 * @param number
+	 * @return long
+	 */
 	
    public	static long factnumber(int number)
    { 
@@ -33,6 +38,11 @@ public class BinarySearchTree {
 	}
 
 	/*From this method we are finding the factorial of a number using long .*/	
+   /************************************
+    * we use here factorial function
+    * @param y
+    * @return long
+    */
 	public static long factorial(long y)
 	{
 		long fact=1;

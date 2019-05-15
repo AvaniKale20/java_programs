@@ -1,8 +1,5 @@
 package Doctor_;
-
-
 import java.util.Scanner;
-
 
 public class Utility {
 	public static Scanner sc = new Scanner(System.in);

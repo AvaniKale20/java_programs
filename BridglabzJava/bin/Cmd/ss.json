@@ -1,4 +1,4 @@
-
+{"stock":{
 	"first":[
 	
 					{"name":"Idea","number":5,"price":7000}
@@ -11,4 +11,5 @@
 	
 					{"name":"Idea","number":5,"price":4000}
 					]
+}
 }

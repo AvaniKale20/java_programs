@@ -6,7 +6,7 @@ package Cmd;
  * 
  ******************************************************************************************/
 
-public class LinkedList<T> // T stands for generic
+public class LinkedList<T> //T stands for generic
 {
 	@SuppressWarnings("rawtypes")
 	Node head; // declearing head node

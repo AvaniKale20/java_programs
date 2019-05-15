@@ -20,11 +20,10 @@ public class BuyyerAndSeller {
 	public static LinkedList<Object>linkedlist=new LinkedList<Object>();
 	public static StackList<Object>stackList=new StackList<Object>();
 	public static QueueList<Object> queue=new QueueList<Object> ();
-
-	/*****************************************************
-	 * 
-	 * 
-	 */
+/****************************
+ * we use here list
+ * @return void
+ */
 
 	public static void list() {
 
@@ -47,15 +46,24 @@ public class BuyyerAndSeller {
 		}
 
 	}
+	/*****************************************
+	 * we use here buy method
+	 * @param amount
+	 * @param symbol
+	 * @return void
+	 */
 	
 	public static void buy(int amount, String symbol) {
 		try {
 			List<CompanyShares> companySharesList = objectmapper.readValue(companySharefile,new TypeReference<List<CompanyShares>>() {});
 			List<Customer> customerList = objectmapper.readValue(customerfile, new TypeReference<List<Customer>>() {});
+		
 			System.out.println("Enter The Person Name ");
 			String searchName = in.nextLine().toUpperCase();
+			
 			int custIndex = StockAccount.searchCustomerIndex(searchName, customerList);
 			int stockIndex = StockAccount.searchSharesBySymbol(symbol, companySharesList);
+		
 			String stackSymbol = null;
 			CompanyShares companyShares = null;
 			if (custIndex != -1) {
@@ -64,9 +72,7 @@ public class BuyyerAndSeller {
 				int noOfShares = companyShares.getNoOfShares();
 				companyShares.setNoOfShares(noOfShares - amount);
 				stackSymbol = companyShares.getStockSymbol();
-				// ls.add(companyShares);
-
-				// System.out.println(stockIndex);
+				
 				Customer customer = customerList.get(custIndex);
 				if (stockIndex == 0) {
 					int value = customer.getTcsShares();
@@ -116,10 +122,11 @@ public class BuyyerAndSeller {
 			e.printStackTrace();
 		}
 	}
-		/**************************************************************************
-		 * 
-		 * 
-		 * 
+		/********************************************
+		 * we use here dell function
+		 * @param amount1
+		 * @param symbol1
+		 *@return void
 		 */
 		public static void sell(int amount1,String symbol1) 
 		{

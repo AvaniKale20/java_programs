@@ -2,7 +2,6 @@ package Com.Bridge.Oops;
 
 //package Json_Programs;
 
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Scanner;

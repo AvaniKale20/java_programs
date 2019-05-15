@@ -2,17 +2,13 @@ package Doctor_;
 
 
 
-/*
- * @aim class to implement methods to display doctor,patient and appointment details
+/*@aim class to implement methods to display doctor,patient and appointment details
  */
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.type.TypeReference;
-//import com.utility.Utility;
-
-
 
 public class InformationDisplayImplementation implements InformationDisplay {
 	static ObjectMapper mapper = new ObjectMapper();

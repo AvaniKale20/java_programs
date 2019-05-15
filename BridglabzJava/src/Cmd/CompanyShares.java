@@ -9,8 +9,6 @@ public class CompanyShares {
 	private int price;
 	private String dateTime;
 	
-	
-
 	// for companyName
 	public String getCompanyName() {
 		return companyName;

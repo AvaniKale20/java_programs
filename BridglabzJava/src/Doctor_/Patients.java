@@ -3,15 +3,14 @@ package Doctor_;
 
 
 /**
- *
  * @aim pojo class for Patients
  */
 public class Patients {
 
-	String name;
-	int id;
-	String phone;
-	int age;
+	private String name;
+	private int id;
+	private String phone;
+	private int age;
 
 	public Patients() {
 

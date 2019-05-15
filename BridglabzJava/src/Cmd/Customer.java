@@ -1,7 +1,4 @@
 package Cmd;
-
-
-
 public class Customer
 {
 	private String name ;

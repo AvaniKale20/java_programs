@@ -60,6 +60,7 @@ public class Expression1 {
 		}
 
 		System.out.println("Enter the date");
+	
 		String date = sc.next();
 
 		DateTimeFormatter date_time_formatter = DateTimeFormatter.ofPattern("DD/MM/YYYY");

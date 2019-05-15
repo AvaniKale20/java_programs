@@ -8,8 +8,6 @@ import org.codehaus.jackson.JsonNode;
 import org.codehaus.jackson.JsonParseException;
 import org.codehaus.jackson.map.JsonMappingException;
 import org.codehaus.jackson.map.ObjectMapper;
-//import org.codehaus.jackson.type.TypeReference;
-//import Json_Programs.Utility;
 
 public class StockMain {
 	public static void main(String[] args) throws IOException, JsonMappingException, JsonParseException {
