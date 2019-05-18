@@ -171,7 +171,7 @@ public class DoctorPatientImplementation implements DoctorAndPatientData {
 	/***********************
 	 * @return void
 	 * for  delete the patients
-	 * @
+	 * 
 	 */
 	public void deletePatient() {
 		changeflag = true;

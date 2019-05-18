@@ -177,9 +177,10 @@ public class SearchingImplementation implements Searching {
 		}
 
 	}
-
-//	@Override
-	//search doctor by availability
+/***********
+    @Override
+   search doctor by availability
+ */
 	public void searchByDoctorAvailability() {
 		// TODO Auto-generated method stub
 		System.out.println("Enter Availability");
